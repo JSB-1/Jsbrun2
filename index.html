@@ -14,6 +14,18 @@
     <div style="font-size: xx-large;">
         <h1 style="background-color: rgb(77, 78, 121); text-align: center;"><span style="color: aliceblue;">Running</span></h1>
     </div>
+
+    <h2>지금은 러닝할 시간 </h2>
+    <h2 id="clock"></h2>
+    <script>
+        function setClock(){
+            let now = new Date();
+            let s = now.getHours() + ':' + now.getMinutes() + ':' + now.getSeconds();
+            document.getElementById('clock').innerHTML = s;
+            setTimeout('setClock()', 1000);
+        }
+        setClock();
+    </script>
     <h2> 간단한 응답을 시작으로 러닝에 대해서 알아봅시다.</h2>
     
 
